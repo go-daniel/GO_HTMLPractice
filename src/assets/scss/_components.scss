@@ -1,0 +1,22 @@
+.btn-primary {
+  @include button-styles($primary-color, $title1-color);
+}
+
+.icon-btn {
+  @include button-styles(transparent, $title1-color);
+
+  padding: 2px;
+  margin: 0;
+
+  &:hover {
+    background-color: transparent;
+  }
+}
+
+.section-title {
+  @include section-title-styles($primary-color);
+}
+
+.container {
+  max-width: 1440px;
+}

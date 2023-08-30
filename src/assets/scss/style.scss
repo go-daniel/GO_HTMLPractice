@@ -1,0 +1,21 @@
+// Import variables and mixins first
+@import "variables";
+@import "mixins";
+
+// Import other style partials
+@import "base";
+@import "layout";
+@import "components";
+
+// Add your custom styles here
+
+// Import additional partials if needed
+//@import "other-partials";
+
+@import "header";
+@import "our-menu";
+@import "footer";
+
+.body {
+  box-sizing: border-box;
+}

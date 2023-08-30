@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta
+      charset="UTF-8"
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+    />
+    <title>Home</title>
+    <!-- bootstrap link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <script>
+      function includeHTML() {
+        var z, i, elmnt, file, xhttp;
+        /*loop through a collection of all HTML elements:*/
+        z = document.getElementsByTagName("*");
+        for (i = 0; i < z.length; i++) {
+          elmnt = z[i];
+          /*search for elements with a certain atrribute:*/
+          file = elmnt.getAttribute("w3-include-html");
+          if (file) {
+            /*make an HTTP request using the attribute value as the file name:*/
+            xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function () {
+              if (this.readyState == 4) {
+                if (this.status == 200) {
+                  elmnt.innerHTML = this.responseText;
+                }
+                if (this.status == 404) {
+                  elmnt.innerHTML = "Page not found.";
+                }
+                /*remove the attribute, and call this function once more:*/
+                elmnt.removeAttribute("w3-include-html");
+                includeHTML();
+              }
+            };
+            xhttp.open("GET", file, true);
+            xhttp.send();
+            /*exit the function:*/
+            return;
+          }
+        }
+      }
+    </script>
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- header -->
+      <div w3-include-html="./header.htm"></div>
+      <!-- end header -->
+
+      <!-- content -->
+
+      <div w3-include-html="./how-it-work.htm"></div>
+
+      <div w3-include-html="./our-menu.htm"></div>
+
+      <div>What the say</div>
+
+      <div>banner</div>
+      <!-- end content -->
+
+      <!-- footer -->
+      <footer class="footer">
+        <div class="row">
+          <div class="col-3">
+            <div>Fresh Bite</div>
+            <p>
+              Teen imli, Shani Mandir, <br />
+              Palda, Indore MP 452001
+            </p>
+            <div class="d-flex">
+              <button>
+                <img src="assets/svg/instagram.svg" alt="instagram" />
+              </button>
+              <button>
+                <img src="assets/svg/facebook.svg" alt="facebook" />
+              </button>
+              <button>
+                <img src="assets/svg/twitter.svg" alt="twitter" />
+              </button>
+            </div>
+          </div>
+          <div class="col-9 row">
+            <div class="col-4">
+              <div>Company</div>
+              <ul>
+                <li>About</li>
+                <li>Career</li>
+                <li>How It Work</li>
+              </ul>
+            </div>
+            <div class="col-4">
+              <div>Policy</div>
+              <ul>
+                <li>FAQ</li>
+                <li>Privacy</li>
+                <li>Shipping</li>
+              </ul>
+            </div>
+            <div class="col-4">
+              <div>Get In Touch</div>
+              <ul>
+                <li>+91 123456789</li>
+                <li>food@example.com</li>
+              </ul>
+            </div>
+          </div>
+          <div class="divider">-------</div>
+        </div>
+        <div class="copy-right">© 2023 Fresh Bite. ALL RIGHT RESERVED.</div>
+      </footer>
+      <!-- end footer -->
+    </div>
+
+    <script>
+      includeHTML();
+    </script>
+  </body>
+</html>

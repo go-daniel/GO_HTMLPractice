@@ -1,0 +1,40 @@
+.header {
+  background-color: rgba(
+    $color: $header-background-color,
+    $alpha: $header-background-opacity
+  );
+  width: 100%;
+  position: relative;
+  // Other header-specific styles
+
+  .logo {
+    font-size: 24px;
+    // Other logo styles
+  }
+
+  @import "navbar";
+
+  .img-group {
+    position: relative;
+    max-width: 500px;
+    height: 588.8px;
+
+    img {
+      max-width: 100%;
+    }
+
+    .img3 {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+  }
+
+  h1 {
+    span {
+      color: $primary-color;
+    }
+  }
+
+  // More header components and styles
+}

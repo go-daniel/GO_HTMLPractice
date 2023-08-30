@@ -1,0 +1,33 @@
+.nav {
+  height: 108px;
+
+  .nav-list {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+
+    li {
+      margin: 0 15px;
+
+      a {
+        text-decoration: none;
+        color: rgba($color: $title1-color, $alpha: 0.7);
+        font-weight: bold;
+
+        &:hover {
+          color: $title1-color;
+        }
+      }
+    }
+  }
+
+  .logo {
+    h1 {
+      font-size: 24px;
+      margin: 0;
+    }
+  }
+}
