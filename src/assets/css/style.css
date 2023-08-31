@@ -258,6 +258,42 @@
   margin: auto;
 }
 
+.what-the-say {
+  width: 80%;
+  margin: auto;
+}
+.what-the-say .container {
+  flex-wrap: nowrap;
+}
+.what-the-say .section-title .section-title-2 {
+  text-align: left;
+  width: 60%;
+}
+.what-the-say .comment {
+  display: flex;
+  gap: 20px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.what-the-say .comment .comment-card {
+  min-width: 452px;
+  border-radius: 10px;
+  background-color: #f1f1f1;
+  padding: 16px;
+}
+.what-the-say .comment .comment-card .user-info .user-img {
+  padding-right: 20px;
+}
+.what-the-say .comment .comment-card .user-info .user-name {
+  font-size: 20px;
+  font-weight: 500px;
+}
+.what-the-say .comment .comment-card .description p {
+  font-size: 18px;
+  font-weight: 400;
+  color: rgba(29, 29, 29, 0.7);
+}
+
 .banner .container {
   background-image: url("../img/banner.png");
   background-repeat: no-repeat;
