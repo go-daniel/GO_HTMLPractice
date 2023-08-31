@@ -21,8 +21,9 @@
 @mixin section-title-styles($color) {
   .section-title-1 {
     margin-bottom: 60px;
-
     color: $color;
+    padding: 4px;
+    font-weight: 500;
     font-size: 22px;
     margin: 0;
   }
@@ -32,14 +33,18 @@
     text-align: center;
     color: $title1-color;
     font-size: 32px;
+    font-weight: 700;
+    padding: 4px;
     margin: 0;
   }
 
   .section-description {
     margin-bottom: 60px;
+    padding: 6px;
     text-align: center;
     color: rgba($color: $title1-color, $alpha: 0.7);
     font-size: 22px;
+    font-weight: 500;
     margin: 0;
   }
 }

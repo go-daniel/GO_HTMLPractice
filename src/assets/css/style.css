@@ -44,6 +44,8 @@
 .section-title .section-title-1 {
   margin-bottom: 60px;
   color: #ffcb45;
+  padding: 4px;
+  font-weight: 500;
   font-size: 22px;
   margin: 0;
 }
@@ -52,13 +54,17 @@
   text-align: center;
   color: #1d1d1d;
   font-size: 32px;
+  font-weight: 700;
+  padding: 4px;
   margin: 0;
 }
 .section-title .section-description {
   margin-bottom: 60px;
+  padding: 6px;
   text-align: center;
   color: rgba(29, 29, 29, 0.7);
   font-size: 22px;
+  font-weight: 500;
   margin: 0;
 }
 
@@ -233,6 +239,14 @@
 .footer {
   height: 489px;
   background-color: #fff9ea;
+}
+
+.how-it-work .service-card img {
+  margin-bottom: 20px;
+}
+.how-it-work .service-card .section-description {
+  width: 80%;
+  margin: auto;
 }
 
 .banner .container {
