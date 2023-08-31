@@ -4,7 +4,19 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    width: 80%;
+    border-radius: 10px;
+    width: 85%;
     height: 332px;
+
+    h2 {
+      color: #fff;
+      font-size: 32px;
+      font-weight: 700px;
+    }
+
+    button {
+      padding: 8px 16px 8px 16px;
+      margin: 20px 0;
+    }
   }
 }
