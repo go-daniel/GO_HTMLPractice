@@ -17,24 +17,82 @@
   .img-group {
     position: relative;
     max-width: 500px;
-    height: 588.8px;
+    max-height: 588.8px;
 
     img {
       max-width: 100%;
+      filter: drop-shadow(0 21px 7px rgba(0, 0, 0, 0.3));
+    }
+
+    .img2 {
+      position: absolute;
+      bottom: 60px;
+      left: -30px;
     }
 
     .img3 {
+      align-self: flex-end;
+    }
+  }
+
+  .text {
+    h1 {
+      font-size: 48px;
+      font-weight: 600;
+      color: $title1-color;
+      span {
+        color: $primary-color;
+      }
+    }
+    p {
+      font-size: 18px;
+      font-weight: 400;
+      color: rgba($color: $title1-color, $alpha: 0.8);
+    }
+  }
+
+  .hero {
+    position: relative;
+
+    .circle {
       position: absolute;
-      bottom: 0;
-      right: 0;
+      border-radius: 50%;
+      background-color: $circle-color;
+      padding: 0;
+    }
+
+    .circle-1 {
+      width: 54px;
+      height: 54px;
+      top: 52px;
+      right: 576px;
+    }
+
+    .circle-2 {
+      width: 19px;
+      height: 19px;
+      top: 249px;
+      right: 567px;
+    }
+
+    .circle-3 {
+      width: 74px;
+      height: 74px;
+      top: 249px;
+      right: 146px;
+    }
+
+    .circle-4 {
+      width: 41px;
+      height: 41px;
+      bottom: 97px;
+      right: 665px;
     }
   }
-
-  h1 {
-    span {
-      color: $primary-color;
-    }
+  .waving {
+    position: absolute;
+    bottom: 40px;
+    left: 0;
   }
-
   // More header components and styles
 }

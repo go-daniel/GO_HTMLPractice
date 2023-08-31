@@ -17,3 +17,7 @@
 @import "footer";
 @import "how-it-work";
 @import "banner";
+
+body {
+  font-family: $global-font;
+}

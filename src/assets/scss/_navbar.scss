@@ -15,19 +15,32 @@
       a {
         text-decoration: none;
         color: rgba($color: $title1-color, $alpha: 0.7);
-        font-weight: bold;
+        font-weight: 500;
+        font-size: 22px;
+        line-height: normal;
 
         &:hover {
           color: $title1-color;
         }
       }
+
+      .active {
+        color: $title1-color;
+        text-decoration: underline;
+      }
     }
   }
 
   .logo {
-    h1 {
+    .title {
       font-size: 24px;
+      font-weight: 600;
+      align-self: flex-end;
       margin: 0;
+    }
+
+    span {
+      padding: 4px;
     }
   }
 }

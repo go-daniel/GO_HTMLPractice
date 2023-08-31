@@ -1,6 +1,11 @@
 .btn-primary {
-  display: inline-block;
-  padding: 12px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 8px 6px;
+  font-size: 14px;
+  font-weight: 700;
   border: none;
   border-radius: 50px;
   background-color: #ffcb45;
@@ -13,8 +18,13 @@
 }
 
 .icon-btn {
-  display: inline-block;
-  padding: 12px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 8px 6px;
+  font-size: 14px;
+  font-weight: 700;
   border: none;
   border-radius: 50px;
   background-color: transparent;
@@ -81,30 +91,93 @@
 .header .nav .nav-list li a {
   text-decoration: none;
   color: rgba(29, 29, 29, 0.7);
-  font-weight: bold;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: normal;
 }
 .header .nav .nav-list li a:hover {
   color: #1d1d1d;
 }
-.header .nav .logo h1 {
+.header .nav .nav-list li .active {
+  color: #1d1d1d;
+  text-decoration: underline;
+}
+.header .nav .logo .title {
   font-size: 24px;
+  font-weight: 600;
+  align-self: flex-end;
   margin: 0;
+}
+.header .nav .logo span {
+  padding: 4px;
 }
 .header .img-group {
   position: relative;
   max-width: 500px;
-  height: 588.8px;
+  max-height: 588.8px;
 }
 .header .img-group img {
   max-width: 100%;
+  filter: drop-shadow(0 21px 7px rgba(0, 0, 0, 0.3));
+}
+.header .img-group .img2 {
+  position: absolute;
+  bottom: 60px;
+  left: -30px;
 }
 .header .img-group .img3 {
-  position: absolute;
-  bottom: 0;
-  right: 0;
+  align-self: flex-end;
 }
-.header h1 span {
+.header .text h1 {
+  font-size: 48px;
+  font-weight: 600;
+  color: #1d1d1d;
+}
+.header .text h1 span {
   color: #ffcb45;
+}
+.header .text p {
+  font-size: 18px;
+  font-weight: 400;
+  color: rgba(29, 29, 29, 0.8);
+}
+.header .hero {
+  position: relative;
+}
+.header .hero .circle {
+  position: absolute;
+  border-radius: 50%;
+  background-color: #ffac4b;
+  padding: 0;
+}
+.header .hero .circle-1 {
+  width: 54px;
+  height: 54px;
+  top: 52px;
+  right: 576px;
+}
+.header .hero .circle-2 {
+  width: 19px;
+  height: 19px;
+  top: 249px;
+  right: 567px;
+}
+.header .hero .circle-3 {
+  width: 74px;
+  height: 74px;
+  top: 249px;
+  right: 146px;
+}
+.header .hero .circle-4 {
+  width: 41px;
+  height: 41px;
+  bottom: 97px;
+  right: 665px;
+}
+.header .waving {
+  position: absolute;
+  bottom: 40px;
+  left: 0;
 }
 
 .our-menu .product-card {
@@ -169,6 +242,10 @@
   background-position: center;
   width: 80%;
   height: 332px;
+}
+
+body {
+  font-family: "Readex Pro", sans-serif;
 }
 
 /*# sourceMappingURL=style.css.map */
