@@ -1,5 +1,6 @@
 .nav {
   height: 108px;
+  width: 80%;
 
   .nav-list {
     width: 100%;
@@ -16,7 +17,7 @@
         text-decoration: none;
         color: rgba($color: $title1-color, $alpha: 0.7);
         font-weight: 500;
-        font-size: 22px;
+        font-size: 2.2em;
         line-height: normal;
 
         &:hover {
@@ -33,7 +34,7 @@
 
   .logo {
     .title {
-      font-size: 24px;
+      font-size: 2.4em;
       font-weight: 600;
       align-self: flex-end;
       margin: 0;

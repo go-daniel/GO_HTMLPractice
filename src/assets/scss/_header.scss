@@ -7,11 +7,6 @@
   position: relative;
   // Other header-specific styles
 
-  .logo {
-    font-size: 24px;
-    // Other logo styles
-  }
-
   @import "navbar";
 
   .img-group {
@@ -36,8 +31,9 @@
   }
 
   .text {
+    margin-right: 8rem;
     h1 {
-      font-size: 48px;
+      font-size: 4.8em;
       font-weight: 600;
       color: $title1-color;
       span {
@@ -45,7 +41,7 @@
       }
     }
     p {
-      font-size: 18px;
+      font-size: 1.8em;
       font-weight: 400;
       color: rgba($color: $title1-color, $alpha: 0.8);
     }

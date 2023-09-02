@@ -22,3 +22,26 @@
 body {
   font-family: $global-font;
 }
+
+html {
+  font-size: 62.5%;
+}
+
+/* Default font size for small screens */
+body {
+  font-size: 0.6rem;
+}
+
+/* Media query for medium-sized screens */
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 0.8rem;
+  }
+}
+
+/* Media query for large screens */
+@media screen and (min-width: 1024px) {
+  body {
+    font-size: 1rem;
+  }
+}

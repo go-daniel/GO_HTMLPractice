@@ -4,7 +4,7 @@
   justify-content: center;
   gap: 16px;
   padding: 8px 6px;
-  font-size: 14px;
+  font-size: 1.4em;
   font-weight: 700;
   border: none;
   border-radius: 50px;
@@ -23,7 +23,7 @@
   justify-content: center;
   gap: 16px;
   padding: 8px 6px;
-  font-size: 14px;
+  font-size: 1.4em;
   font-weight: 700;
   border: none;
   border-radius: 50px;
@@ -46,7 +46,7 @@
   color: #ffcb45;
   padding: 4px;
   font-weight: 500;
-  font-size: 22px;
+  font-size: 2.2em;
   margin: 0;
 }
 .section-title .section-title-2 {
@@ -63,13 +63,14 @@
   padding: 6px;
   text-align: center;
   color: rgba(29, 29, 29, 0.7);
-  font-size: 22px;
+  font-size: 2.2em;
   font-weight: 500;
   margin: 12px;
 }
 
 .container {
   max-width: 1440px;
+  overflow-x: hidden;
 }
 
 .header {
@@ -77,11 +78,9 @@
   width: 100%;
   position: relative;
 }
-.header .logo {
-  font-size: 24px;
-}
 .header .nav {
   height: 108px;
+  width: 80%;
 }
 .header .nav .nav-list {
   width: 100%;
@@ -98,7 +97,7 @@
   text-decoration: none;
   color: rgba(29, 29, 29, 0.7);
   font-weight: 500;
-  font-size: 22px;
+  font-size: 2.2em;
   line-height: normal;
 }
 .header .nav .nav-list li a:hover {
@@ -109,7 +108,7 @@
   text-decoration: underline;
 }
 .header .nav .logo .title {
-  font-size: 24px;
+  font-size: 2.4em;
   font-weight: 600;
   align-self: flex-end;
   margin: 0;
@@ -134,8 +133,11 @@
 .header .img-group .img3 {
   align-self: flex-end;
 }
+.header .text {
+  margin-right: 8rem;
+}
 .header .text h1 {
-  font-size: 48px;
+  font-size: 4.8em;
   font-weight: 600;
   color: #1d1d1d;
 }
@@ -143,7 +145,7 @@
   color: #ffcb45;
 }
 .header .text p {
-  font-size: 18px;
+  font-size: 1.8em;
   font-weight: 400;
   color: rgba(29, 29, 29, 0.8);
 }
@@ -225,7 +227,7 @@
   padding: 6px 12px 6px 12px;
 }
 .our-menu .product-card .product-info-container .product-info .more-info .product-price {
-  font-size: 22px;
+  font-size: 2.2em;
   font-weight: 500;
   color: #1d1d1d;
 }
@@ -247,7 +249,76 @@
 
 .footer {
   height: 489px;
+  margin-top: 5rem;
   background-color: #fff9ea;
+}
+.footer .container {
+  padding: 6% 8%;
+}
+.footer .logo .title {
+  font-size: 24px;
+  font-weight: 600;
+  align-self: flex-end;
+  margin: 0;
+}
+.footer .logo span {
+  padding: 4px;
+}
+.footer .address {
+  font-size: 20px;
+  font-weight: 400;
+  margin: 26px 0 26px 0;
+  color: rgba(29, 29, 29, 0.7);
+  display: flex;
+}
+.footer .btn-group {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+}
+.footer .copy-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 400;
+  color: #1d1d1d;
+}
+.footer .copy-right::before {
+  content: " ";
+  display: block;
+  width: 85%;
+  height: 0px;
+  border: 1px solid rgba(29, 29, 29, 0.5);
+  margin-bottom: 44px;
+}
+.footer .icon-btn {
+  padding: 12px;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+}
+.footer .icon-btn-primary {
+  background-color: #ffcb45;
+}
+.footer h3 {
+  font-size: 20px;
+  font-weight: 500;
+  color: #1d1d1d;
+  margin: 10px 0 30px 0;
+}
+.footer .list ul {
+  list-style: none;
+  padding: 0;
+}
+.footer .list ul li {
+  margin: 10px 0;
+}
+.footer .list ul li a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 400;
+  color: rgba(29, 29, 29, 0.7);
 }
 
 .how-it-work .service-card img {
@@ -264,6 +335,7 @@
 }
 .what-the-say .container {
   flex-wrap: nowrap;
+  overflow-x: visible;
 }
 .what-the-say .section-title .section-title-2 {
   text-align: left;
@@ -315,6 +387,28 @@
 
 body {
   font-family: "Readex Pro", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* Default font size for small screens */
+body {
+  font-size: 0.6rem;
+}
+
+/* Media query for medium-sized screens */
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 0.8rem;
+  }
+}
+/* Media query for large screens */
+@media screen and (min-width: 1024px) {
+  body {
+    font-size: 1rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
