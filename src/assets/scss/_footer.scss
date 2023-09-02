@@ -13,7 +13,7 @@
 
   .logo {
     .title {
-      font-size: 24px;
+      font-size: 2.4em;
       font-weight: 600;
       align-self: flex-end;
       margin: 0;
@@ -25,7 +25,7 @@
   }
 
   .address {
-    font-size: 20px;
+    font-size: 2em;
     font-weight: 400;
     margin: 26px 0 26px 0;
     color: rgba($color: $title1-color, $alpha: 0.7);
@@ -43,7 +43,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 16px;
+    font-size: 1.6em;
     font-weight: 400;
     color: $title1-color;
 
@@ -68,7 +68,7 @@
   }
 
   h3 {
-    font-size: 20px;
+    font-size: 2em;
     font-weight: 500;
     color: $title1-color;
     margin: 10px 0 30px 0;
@@ -83,7 +83,7 @@
         margin: 10px 0;
         a {
           text-decoration: none;
-          font-size: 18px;
+          font-size: 1.8em;
           font-weight: 400;
           color: rgba($color: $title1-color, $alpha: 0.7);
         }
