@@ -14,6 +14,31 @@
     max-width: 50em;
     max-height: 59em;
 
+    .group-1 {
+      position: relative;
+
+      .circle-1 {
+        width: 5.4em;
+        height: 5.4em;
+        top: 5.2em;
+        left: -7.2em;
+      }
+
+      .circle-2 {
+        width: 1.9em;
+        height: 1.9em;
+        bottom: 8em;
+        left: -4.7em;
+      }
+
+      .circle-3 {
+        width: 7.4em;
+        height: 7.4em;
+        bottom: 2em;
+        right: 8em;
+      }
+    }
+
     img {
       max-width: 100%;
       filter: drop-shadow(0 2.1em 0.7em rgba(0, 0, 0, 0.3));
@@ -56,36 +81,14 @@
     }
   }
 
+  .circle {
+    position: absolute;
+    border-radius: 50%;
+    background-color: $circle-color;
+    padding: 0;
+  }
   .hero {
     position: relative;
-
-    .circle {
-      position: absolute;
-      border-radius: 50%;
-      background-color: $circle-color;
-      padding: 0;
-    }
-
-    .circle-1 {
-      width: 5.4em;
-      height: 5.4em;
-      top: 5.2em;
-      right: 57em;
-    }
-
-    .circle-2 {
-      width: 1.9em;
-      height: 1.9em;
-      top: 25em;
-      right: 56.7em;
-    }
-
-    .circle-3 {
-      width: 7.4em;
-      height: 7.4em;
-      top: 25em;
-      right: 14.6em;
-    }
 
     .circle-4 {
       width: 4.1em;

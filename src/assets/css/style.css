@@ -167,6 +167,27 @@
   max-width: 50em;
   max-height: 59em;
 }
+.header .img-group .group-1 {
+  position: relative;
+}
+.header .img-group .group-1 .circle-1 {
+  width: 5.4em;
+  height: 5.4em;
+  top: 5.2em;
+  left: -7.2em;
+}
+.header .img-group .group-1 .circle-2 {
+  width: 1.9em;
+  height: 1.9em;
+  bottom: 8em;
+  left: -4.7em;
+}
+.header .img-group .group-1 .circle-3 {
+  width: 7.4em;
+  height: 7.4em;
+  bottom: 2em;
+  right: 8em;
+}
 .header .img-group img {
   max-width: 100%;
   filter: drop-shadow(0 2.1em 0.7em rgba(0, 0, 0, 0.3));
@@ -203,32 +224,14 @@
   font-weight: 400;
   color: rgba(29, 29, 29, 0.8);
 }
-.header .hero {
-  position: relative;
-}
-.header .hero .circle {
+.header .circle {
   position: absolute;
   border-radius: 50%;
   background-color: #ffac4b;
   padding: 0;
 }
-.header .hero .circle-1 {
-  width: 5.4em;
-  height: 5.4em;
-  top: 5.2em;
-  right: 57em;
-}
-.header .hero .circle-2 {
-  width: 1.9em;
-  height: 1.9em;
-  top: 25em;
-  right: 56.7em;
-}
-.header .hero .circle-3 {
-  width: 7.4em;
-  height: 7.4em;
-  top: 25em;
-  right: 14.6em;
+.header .hero {
+  position: relative;
 }
 .header .hero .circle-4 {
   width: 4.1em;
