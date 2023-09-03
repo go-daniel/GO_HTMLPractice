@@ -2,49 +2,55 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 16px;
-  padding: 8px 6px;
-  font-size: 1.4em;
-  font-weight: 700;
+  gap: 1.6em;
+  padding: 0.8em 0.6em;
   border: none;
-  border-radius: 50px;
+  border-radius: 5em;
   background-color: $bg-color;
-  color: $text-color;
   cursor: pointer;
+  white-space: nowrap;
   transition: background-color 0.3s, color 0.3s;
-
+  color: $text-color;
+  font-size: unset;
+  a {
+    font-weight: 700;
+    color: $text-color;
+    font-size: 1.4em;
+  }
   &:hover {
     background-color: rgba($bg-color, 0.8);
   }
+
+  /// update text in button
 }
 
 @mixin section-title-styles($color) {
   .section-title-1 {
-    margin-bottom: 60px;
+    margin-bottom: 6em;
     color: $color;
-    padding: 4px;
+    padding: 0.4em;
     font-weight: 500;
     font-size: 2.2em;
     margin: 0;
   }
 
   .section-title-2 {
-    margin-bottom: 60px;
+    margin-bottom: 6em;
     text-align: center;
     color: $title1-color;
     font-size: 3.2em;
     font-weight: 700;
-    padding: 4px;
+    padding: 0.4em;
     margin: 0;
   }
 
   .section-description {
-    margin-bottom: 60px;
-    padding: 6px;
+    margin-bottom: 6em;
+    padding: 0.6em;
     text-align: center;
     color: rgba($color: $title1-color, $alpha: 0.7);
     font-size: 2.2em;
     font-weight: 500;
-    margin: 12px;
+    margin: 1.2em;
   }
 }

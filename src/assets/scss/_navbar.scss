@@ -1,5 +1,5 @@
 .nav {
-  height: 108px;
+  height: 10.8em;
   width: 80%;
 
   .nav-list {
@@ -11,9 +11,10 @@
     margin: 0;
 
     li {
-      margin: 0 15px;
+      margin: 0 1.5em;
 
       a {
+        white-space: nowrap;
         text-decoration: none;
         color: rgba($color: $title1-color, $alpha: 0.7);
         font-weight: 500;
@@ -38,10 +39,50 @@
       font-weight: 600;
       align-self: flex-end;
       margin: 0;
+      white-space: nowrap;
     }
 
     span {
-      padding: 4px;
+      padding: 0 0.4em;
+      img {
+        width: 4.7em;
+        height: 4.7em;
+        object-fit: contain;
+      }
+    }
+  }
+
+  .my-btn-group {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2.2em;
+
+    .btn {
+      font-size: unset;
+    }
+
+    .btn-search {
+      width: 3.56em;
+      height: 3.56em;
+      padding: 0.5em;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+    .btn-cart {
+      width: 3.56em;
+      height: 3.56em;
+      padding: 0.5em;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+    .btn-login {
     }
   }
 }
