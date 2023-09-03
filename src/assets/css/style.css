@@ -386,6 +386,12 @@
   margin: 1em 0 3em 0;
   white-space: nowrap;
 }
+.footer .list {
+  position: relative;
+}
+.footer .list .col-4 {
+  z-index: 6;
+}
 .footer .list ul {
   list-style: none;
   padding: 0;
@@ -399,6 +405,31 @@
   font-weight: 400;
   color: rgba(29, 29, 29, 0.7);
   white-space: nowrap;
+}
+.footer .list .circle {
+  position: absolute;
+  border-radius: 50%;
+  background-color: #ffac4b;
+  padding: 0;
+  z-index: 5;
+}
+.footer .list .circle-1 {
+  width: 3.8em;
+  height: 3.8em;
+  top: 0;
+  left: 0;
+}
+.footer .list .circle-2 {
+  width: 10em;
+  height: 10em;
+  top: -5em;
+  right: 7.8em;
+}
+.footer .list .circle-3 {
+  width: 6.6em;
+  height: 6.6em;
+  bottom: 1em;
+  right: 62%;
 }
 
 .how-it-work .service-card img {

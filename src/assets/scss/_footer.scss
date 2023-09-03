@@ -86,6 +86,10 @@
   }
 
   .list {
+    position: relative;
+    .col-4 {
+      z-index: 6;
+    }
     ul {
       list-style: none;
       padding: 0;
@@ -100,6 +104,35 @@
           white-space: nowrap;
         }
       }
+    }
+
+    .circle {
+      position: absolute;
+      border-radius: 50%;
+      background-color: $circle-color;
+      padding: 0;
+      z-index: 5;
+    }
+
+    .circle-1 {
+      width: 3.8em;
+      height: 3.8em;
+      top: 0;
+      left: 0;
+    }
+
+    .circle-2 {
+      width: 10em;
+      height: 10em;
+      top: -5em;
+      right: 7.8em;
+    }
+
+    .circle-3 {
+      width: 6.6em;
+      height: 6.6em;
+      bottom: 1em;
+      right: 62%;
     }
   }
 }
