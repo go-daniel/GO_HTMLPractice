@@ -493,18 +493,18 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  border-radius: 10px;
+  border-radius: 1em;
   width: 85%;
-  height: 332px;
+  height: 33.2em;
 }
 .banner .container h2 {
   color: #fff;
   font-size: 3.2em;
-  font-weight: 700px;
+  font-weight: 700;
 }
 .banner .container button {
-  padding: 8px 16px 8px 16px;
-  margin: 20px 0;
+  padding: 0.8em 1.6em 0.8em 1.6em;
+  margin: 2em 0;
 }
 
 body {
