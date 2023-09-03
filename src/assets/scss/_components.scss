@@ -5,7 +5,7 @@
 .icon-btn {
   @include button-styles(transparent, $title1-color);
 
-  padding: 2px;
+  padding: 0.2em;
   margin: 0;
 
   &:hover {
