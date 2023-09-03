@@ -1,12 +1,22 @@
 .how-it-work {
-  .service-card {
-    img {
-      margin-bottom: 20px;
-    }
+  margin: 5em auto;
 
-    .section-description {
-      width: 80%;
-      margin: auto;
+  .service {
+    width: 90%;
+    display: flex;
+    .service-card {
+      flex: 1;
+      img {
+        margin-bottom: 2em;
+        width: 18em;
+        height: 18em;
+        object-fit: contain;
+      }
+
+      .section-description {
+        width: 80%;
+        margin: auto;
+      }
     }
   }
 }

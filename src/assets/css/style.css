@@ -435,10 +435,23 @@
   right: 62%;
 }
 
-.how-it-work .service-card img {
-  margin-bottom: 20px;
+.how-it-work {
+  margin: 5em auto;
 }
-.how-it-work .service-card .section-description {
+.how-it-work .service {
+  width: 90%;
+  display: flex;
+}
+.how-it-work .service .service-card {
+  flex: 1;
+}
+.how-it-work .service .service-card img {
+  margin-bottom: 2em;
+  width: 18em;
+  height: 18em;
+  object-fit: contain;
+}
+.how-it-work .service .service-card .section-description {
   width: 80%;
   margin: auto;
 }
