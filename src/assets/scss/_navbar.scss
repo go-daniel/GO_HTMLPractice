@@ -28,7 +28,18 @@
 
       .active {
         color: $title1-color;
-        text-decoration: underline;
+        position: relative;
+
+        &::after {
+          position: absolute;
+          content: "";
+          display: block;
+          width: 100%;
+          height: 0.2em;
+          background-color: $primary-color;
+          margin-top: 0.3em;
+          border-radius: 1em;
+        }
       }
     }
   }

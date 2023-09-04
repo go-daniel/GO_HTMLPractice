@@ -116,7 +116,17 @@
 }
 .header .nav .nav-list li .active {
   color: #1d1d1d;
-  text-decoration: underline;
+  position: relative;
+}
+.header .nav .nav-list li .active::after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 0.2em;
+  background-color: #ffcb45;
+  margin-top: 0.3em;
+  border-radius: 1em;
 }
 .header .nav .logo .title {
   font-size: 2.4em;
@@ -319,7 +329,7 @@
 }
 
 .footer {
-  height: 489px;
+  height: 49em;
   margin-top: 5em;
   overflow: hidden;
   background-color: #fff9ea;
@@ -342,11 +352,13 @@
   height: 3.5em;
 }
 .footer .address {
+  margin: 2.6em 0 2.6em 0;
+  display: flex;
+}
+.footer .address p {
   font-size: 2em;
   font-weight: 400;
-  margin: 2.6em 0 2.6em 0;
   color: rgba(29, 29, 29, 0.7);
-  display: flex;
 }
 .footer .btn-group {
   display: flex;
@@ -386,11 +398,13 @@
   font-size: 2em;
   font-weight: 500;
   color: #1d1d1d;
-  margin: 1em 0 3em 0;
   white-space: nowrap;
 }
 .footer .list {
   position: relative;
+}
+.footer .list .list-title {
+  margin: 1em 0 3em 0;
 }
 .footer .list .col-4 {
   z-index: 6;
